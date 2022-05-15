@@ -9,29 +9,17 @@ body {
     max-width: 100%;
 }
 
-/*@media only screen and (min-width: 1441px) {
-	body {
-        width: 100%;
-    }
-
-    [class^="section"] {
-        width: 2496px;
-        min-width: 2496px;
-    }
-
-    .header {
-        max-width: 100%;
-        min-width: 100%;
-    }*/
-
+.main {
+    margin: 0 auto;
+    min-width: 1440px;
+    max-width: 100%;
 }
 
-[class^="section"] {
+/*[class^="section"] {
     min-width: 1440px;
     max-width: 100%;
     display: flex;
-
-}
+}*/
 
 [class^="container"] {
     width: 1250px;
@@ -273,12 +261,6 @@ body {
 
 
 
-
-.main {
-    margin: 0 auto;
-    min-width: 1440px;
-    max-width: 100%;
-}
 
 .section1 {
     flex-direction: column;
