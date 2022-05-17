@@ -1,3 +1,33 @@
+@media screen and (max-width: 1000px) {
+    [class^="container"] {
+        max-width: 860px;
+        
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    [class^="container"] {
+        max-width: none;
+        
+    }
+
+    .navigation {
+        display: none;
+        position: absolute;
+    }
+
+    .button_header {
+        display: none;
+    }
+
+
+}
+
+
+
 * {
     box-sizing: border-box;
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
@@ -22,7 +52,8 @@ body {
 }*/
 
 [class^="container"] {
-    width: 1250px;
+    min-width: 1250px;
+    max-width: 1250px;
     display: flex;
     margin: 0 auto;
 }
@@ -228,17 +259,9 @@ body {
     text-decoration: none; 
 }
 
-#home {
-    color: #E3B873;
-}
-
 .link_nav:hover {
     color: #E3B873;
     text-decoration: none; 
-}
-
-#home:hover {
-    color: #FFFFFF;
 }
 
 .tel {
@@ -442,10 +465,13 @@ body {
 .text3 {
     font-size: 18px;
     margin: 10px 0px;
+    text-align: center;
+    line-height: 2;
+    width: 680px;
 }
 
 .form_section3 {
-    margin-top: 93px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-around;
     width: 815px;
@@ -587,35 +613,41 @@ body {
     width: 703px;
     height: 645px;
     background-size: cover;
-    padding: 117px 80px 54px 225px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    padding: 115px 80px 0px 225px;
     margin-right: 131px;
 }
 
-.item_section5 {
+.list_section5 {
+    list-style: none;
+    padding-left: 0;
+}
+
+.item_list_section5 {
+    line-height: 1.3;
+    font-size: 14px;
+	padding-left: 0px;
     display: flex;
     align-items: center;
-    background-image: url(../images/Rectangle\ 8.1.svg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: auto auto;
+    margin-bottom: 35px;
+}
+
+.item_list_section5::before {
+    content: url(../images/Rectangle5.1.svg);width: 50px;
+    position: relative;
+    top: 6px;
+
 }
 
 .number5 {
     font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-size: 18px;
-    color: #FFF;
+    color: #fff;
     position: relative;
-    top: -5px;
-    margin-left: 34px;
-    margin-right: 25px;
-}
-
-.text5 {
-    line-height: 1.3;
-    font-size: 14px;
+    left: -17px;
+    z-index: 2;
+    margin-right: 15px;
+    display: inline-block;
+    text-align: center;
 }
 
 .content_right_top_section5 {
@@ -723,9 +755,13 @@ body {
     padding-top: 247px;
 }
 
-.text6_active {
-    display: inline-block;
+.text6 {
     font-size: 20px;
+    color: #fff;
+}
+
+.text6:nth-of-type(1) {
+    display: inline-block;
     color: #E3B873;
     border-bottom: 1px solid;
     border-color: #E3B873;
@@ -734,10 +770,11 @@ body {
     margin-top: 47px;
 }
 
-.text6_passive {
-    font-size: 20px;
-    color: #fff;
+.text6_active {
+    
 }
+
+
 
 .content_right_section6 {
     display: flex;
@@ -900,75 +937,6 @@ body {
     display: block;
     margin: 40px 0px;
 }
-
-
-/*.section8 {
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.background_top_section8 {
-    display: flex;
-}
-
-.background_top_section8 img {
-    opacity: 0.05;
-    filter: alpha (opacity=10);
-}
-
-.background_top_section8 img:first-child {
-    transform: scale(-1, 1);
-}
-
-.image_background_section8 {
-    width: 1440px;
-    height: 954px;
-    background: url(../images/image\ 9.1.jpg);
-    background-size: cover;
-    position: absolute;
-    z-index: -2;
-}
-
-.blackuot_background_section8 {
-    width: 1440px;
-    height: 954px;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
-    padding-top: 275px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: -1;
-}
-
-.title3_section8 {
-    line-height: 2;
-}
-
-.contacts8 {
-    display: flex;
-    justify-content: center;
-}
-
-.item_contacts8 {
-    width: 28px;
-    height: 28px;
-    margin: 26px 7.5px 0px;
-    background-color: #E3B873;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.item_contacts8:hover {
-    background-color: hsl(37, 46%, 58%);
-}
-
-.map8 {
-    display: block;
-    margin: 40px 0px;
-}*/
 
 
 
