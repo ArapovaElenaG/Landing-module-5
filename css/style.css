@@ -57,8 +57,9 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 0550px) {
     .container {
+        max-width: 100%;
         padding: 0 18px;
     }
     
@@ -380,7 +381,7 @@ body {
 
     .title1_section1 {
         max-width: 100%;
-        min-width: 100%;
+        min-width: 99%;
     }
     
     .text1 {
@@ -1685,6 +1686,8 @@ body {
 
 
 
+
+
 .footer {
     background-color: black;
     margin: 0 auto;
@@ -1695,3 +1698,4 @@ body {
         display: none;
     }
 }
+
