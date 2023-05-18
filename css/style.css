@@ -238,7 +238,7 @@ body {
 }
 
 .navigation_items {
-    list-style-type: none;
+    /* list-style-type: none; */
     margin-right: 47px;
 }
 
@@ -297,7 +297,7 @@ body {
 
 .section1 {
     height: auto;
-    background-image: url(../images/image1.jpg);
+    background-image: url(../images/image1-1440.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
